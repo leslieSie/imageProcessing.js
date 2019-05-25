@@ -1,2 +1,3 @@
-let test1 = 1;
-const aaa1 = 222;
+function test1() {
+    return 1;
+}
