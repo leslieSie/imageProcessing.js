@@ -1,13 +1,26 @@
-class picture {
-    constructor() {
+let utils = require('./utils');
 
+class Picture {
+    constructor(width, height) {
+        this.width = width;
+        this.height = height;
+        this.currentImage = '';
+        this.leastReStore = [];
     }
-    src() {
+    src(options) {
         //输入
+        try {
+
+            return this;
+        } catch (error) {
+
+        }
 
     }
-    pipe() {
+    pipe(name) {
         // 管道
+        console.log(name);
+        return this;
     }
     dest() {
         // 输出
@@ -20,6 +33,5 @@ class picture {
     }
 
 }
-module.exports = {
-    picture
-}
+
+module.exports = Picture;
